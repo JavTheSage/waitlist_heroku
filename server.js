@@ -7,15 +7,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
  app.get("/", function(req, res) {
-    res.sendFile("waitlist_heroku/index.html", {root: waitlist_heroku});
+    res.sendFile("/home.html", {root: __dirname});
   });
 
   app.get("/tables", function(req, res) {
-    res.json(tables);
+    res.sendFile("/tables.html", {root: __dirname});
   });
 
   app.get("/reserve", function(req, res) {
-    res.json(reserve);
+    res.sendFile("/reserve.html", {root: __dirname});
   });
 
 
