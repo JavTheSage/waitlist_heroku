@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservation Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <container>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="jumbotron">
+                    <h1 class="display-4 d-flex justify-content-center font-weight-bolder">🍃The Hidden Leaf Cafe🍃</h1>
+                    <hr class="my-4">
+                    <h1 class="d-flex justify-content-center">Current Reservations and Waiting List</h1>
+                    <div class="button-layout d-flex justify-content-center mt-3">
+                        <button class="btn btn-outline-primary mr-3 view-tables" role="button">🍽️View Tables</a>
+                            <button class="btn btn-outline-dark go-home" role="button">🍜Home</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Table Reservation
+                    </div>
+                    <div class="card-body card-reservation">
+                        <form>
+                            <div class="form-group">
+                                <label for="userName">Name</label>
+                                <input type="name" class="form-control" id="userName" placeholder="Enter Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="userNumber">Phone Number</label>
+                                <input type="number" class="form-control" id="userNumber" placeholder="Enter Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="userEmail">Email Address</label>
+                                <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="userId">Unique ID</label>
+                                <input type="id" class="form-control" id="userId"
+                                    placeholder="Unique Id">
+                            </div>
+                            <button type="submit" class="btn btn-primary submition">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <p>Control Panel</p>
+                <a href="#" class="clear-table">Clear Table</a> |
+                <a href="./api/tables">API Table Link</a> |
+                <a href="./api/waitlist">API Wait List</a>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </container>
+</body>
+
+</html>
