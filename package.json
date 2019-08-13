@@ -1,0 +1,24 @@
+{
+  "name": "waitlist_heroku",
+  "version": "1.0.0",
+  "description": "Web app that reserves a spot in a virtual waitlist",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavTheSage/waitlist_heroku.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JavTheSage/waitlist_heroku/issues"
+  },
+  "homepage": "https://github.com/JavTheSage/waitlist_heroku#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
